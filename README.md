@@ -7,3 +7,4 @@ cuart canvi en remot
 quinto cambio en local
 sexto cambio en local
 primer cambio en visual studio
+septimo cambio en remoto
