@@ -1,28 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE home>
+<home lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Contacta</title>
-   <link rel="stylesheet" href="css/style.css">
-</head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contacta</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
 
-<body>
-   <main>
-      <ul>
-         <li> <a href="presentacion.html" target="_blank">Presentación</a></li>
-         <li> <a href="contacta.html">Contacta</a></li>
-         <li> <a href="libre.html">Adopta</a> </li>
-      </ul>
-   </main>
-   <h1>Contacta</h1>
-   <!-- ruta en la misma carpeta -->
-   <p>2. En la carpeta img (un nivel)</p>
-   <!-- añadido enlace a la foto -->
-   <a href="https://es.wikipedia.org/wiki/Historia_del_gato" target:_blank>
-      <img src="img/gato.jpg" alt="gato">
-   </a>
-</body>
-</html>
+   <body>
+      <main>
+         <ul>
+            <li> <a href="presentacion.home" target="_blank">Presentación</a></li>
+            <li> <a href="contacta.home">Contacta</a></li>
+            <li> <a href="libre.home">Adopta</a> </li>
+         </ul>
+      </main>
+      <h1>Contacta</h1>
+      <!-- ruta en la misma carpeta -->
+      <p>2. En la carpeta img (un nivel)</p>
+      <!-- añadido enlace a la foto -->
+      <a href="https://es.wikipedia.org/wiki/Historia_del_gato" target:_blank>
+         <img src="img/gato.jpg" alt="gato">
+      </a>
+      <br></br>
+      <!-- Practica formularis -->
+      <h2>DADES BÀSIQUES</h2>
+      <form action="/action_page.php" method="get">
+         <label for="fname">Nom:</label>
+         <input type="text" id="fname" name="fname" placeholder="El teu nom"><br><br>
+         <label for="lname">Primer cognom:</label>
+         <input type="text" id="lname" name="lname">
+         <label for="lname">Segon cognom:</label>
+         <input type="text" id="lname2" name="lname2"><br><br>
+         <input type="submit" value="Submit"><br><br>
+         <label for="tipus">Tipus de document:</label>
+         <select id="tipus" name="tipus">
+            <option value="0">Tria el tipus de document</option>
+            <option value="nif">NIF</option>
+            <option value="cif">CIF</option>
+            <option value="nie">NIE</option>
+         </select>
+         <label for="document">Document d'identitat:</label>
+         <input type="text" id="document" name="document" maxlength="9" placeholder="Numero i lletra">
+         <br><br>
+         <p>Ets:</p>
+         <input type="radio" id="home" name="genere" value="home">
+         <label for="home">Home</label>
+         <input type="radio" id="dona" name="genere" value="dona">
+         <label for="dona">Dona</label><br><br>
+         <label for="naixament">Data de naixament:</label>
+         <input type="date" id="naixament" name="naixament"><br><br>
+
+         <H2>DADES DE CONTACTE</H2>
+         <label for="email">Adreça de correu electrònic:</label>
+         <input type="email" name="email" id="email" placeholder="El teu e-mail"><br><br>
+         <label for="telefon">Telèfon:</label>
+         <input type="tel" id="telefon" name="telefon" maxlength="9"><br><br>
+         <p>Vius a Barcelona?</p>
+         <input type="radio" id="si" name="vius" value="si">
+         <label for="home">Sí</label>
+         <input type="radio" id="no" name="vius" value="no">
+         <label for="dona">No</label><br><br>
+
+         <label for="via">Tipus de via:</label>
+         <select id="via" name="via">
+            <option value="0">Tria el tipus de via</option>
+            <option value="carrer">Carrer</option>
+            <option value="avinguda">Avinguda</option>
+            <option value="placa">Plaça</option>
+         </select>
+         <label for="adreca">Adreça:</label>
+         <input type="text" id="adreca" name="adreca" placeholder="La teva adreça">
+         <label for="numero">Número:</label>
+         <input type="text" id="numero" name="numero" placeholder="El número" pattern="[1]"><br><br>
+         <label for="pis">Pis:</label>
+         <input type="text" id="pis" name="pis" placeholder="El pis">
+         <label for="porta">Porta:</label>
+         <input type="text" id="pis" name="pis" placeholder="El pis">
+         <label for="escala">Escala:</label>
+         <input type="text" id="escala" name="escala" placeholder="L'escala"><br><br>
+         <label for="codipostal">Codi postal:</label>
+         <input type="text" id="codipostal" name="codipostal" placeholder="Codi postal">
+         <label for="poblacio">Població:</label>
+         <input type="text" id="poblacio" name="poblacio" placeholder="La teva població"><br><br>
+      </form>
+   </body>
+
+</home>
