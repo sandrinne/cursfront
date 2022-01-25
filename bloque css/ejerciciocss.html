@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio de selectores</title>
+    <style>
+      .city {
+        background-color: pink;
+        color: white;
+        border-top: 20px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      * {
+        text-align: center;
+        color: rgb(41, 41, 46);
+      }
+      h1 {
+        text-align: center;
+        font-size: 64px;
+        text-transform: capitalize;
+        color: rgb(207, 32, 61);
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(0, 255, 128);
+      }
+      p {
+        text-align: center;
+        color: green;
+        text-decoration: hotpink;
+      }
+      p.one {
+        border-style: solid;
+        color: grey;
+        border-width: 5px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: black;
+        border-radius: 50px;
+        width: 50%;
+      }
+
+      .link {
+        width: 50%;
+      }
+      div h2 {
+        color: grey;
+      }
+      div > p {
+        color: black;
+      }
+      div,
+      p {
+        color: orange;
+      }
+      body {
+        background-color: gainsboro;
+      }
+      div {
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+<ul>
+    <li><a href="https://www.traveler.es/" target="_blank">Cities</a></li> 
+    <li> <a href="https://es.wikipedia.org/wiki/City" target="_blank"> Intro</a></li>
+    <li> <a href="https://www.lonelyplanet.es/" target="_blank"> Travel</a></li>
+    <li> <a href="https://www.filmaffinity.com/es/film205256.html" target="_blank"> Contact</a></li>
+</ul>
+    </nav>
+    <section>
+      <h1>All the cities</h1>
+      <div class="city">
+        <h2>London</h2>
+        <img
+          class="link"
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+          alt="london"
+        />
+        <p>London is the capital of England.</p>
+      </div>
+      <div class="city">
+        <h2 style="color: violet">Paris</h2>
+        <img class="link"
+        src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+        alt=paris">
+        <p>Paris is the capital of France.</p>
+      </div>
+      <div class="city">
+        <h2>Tokyo</h2>
+        <img
+          class="link"
+          src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG9reW98ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+          alt="tokio"
+        />
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div class="city">
+        <h2>Wonderful cities I Love</h2>
+        <p>Do you want to see more?</p>
+      </div>
+    </section>
+    <p class="one">CONTACT</p>
+  </body>
+</html>
