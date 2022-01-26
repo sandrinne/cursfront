@@ -1,0 +1,63 @@
+a {
+    color: red;
+}
+li {
+list-style: none;
+}
+.especial {
+    background-color: red;
+    color: white;
+    padding: 0.6em;
+}
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    display: inline-block;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 20px;
+}
+section {
+    width: 600px;
+}
+h1 {
+    font-size: 3em;
+}
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tabla {
+    background-color: rgb(196, 192, 192);
+    border: black 1px;
+    border-style: solid;
+    padding: 20px;
+}
+.flecha {
+    width:fit-content;
+    height: auto;
+    display: inline-block;
+}
+.seis {
+    width: 400px;
+    height: 150px;
+    background-color: salmon;
+    border: black 4px;
+    border-style:dotted;
+margin: 50px;
+padding: 40px;
+}
+.textoseis {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+form {
+    padding: 20px;
+}
+.formulario {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;;
+}

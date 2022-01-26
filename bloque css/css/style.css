@@ -1,0 +1,45 @@
+h1 {
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pastilla {
+    background-color: rgb(248, 19, 57);
+    color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+  .circulo {
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  .margen {
+      border: solid 15px;
+      border-color: red;
+      padding: 10px;
+  }
+  .cuadrado1 {
+      border: solid 3px;
+      border-color: black;
+      width: 20%;
+      height: 100px;
+      border-radius: 10pt;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      display: inline-block;
+      line-height: 100px;
+  }
+  .rectangulo {
+      width: 600px;
+      height: 200px;
+      border: black solid 2px;
+  }
