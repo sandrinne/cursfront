@@ -1,0 +1,21 @@
+ul {
+    width: 300px;
+list-style: none;
+}
+li {
+    border: 1px black solid;
+    background-color: rgb(223, 215, 205);
+}
+ul li a {
+    background: url("../img/flecha_inactiva.png") 3px no-repeat;
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+    padding: .2em 0 .2em 1.5em;
+}
+ul li a:hover {
+    background: url(../img/flecha_activa.png) 3px no-repeat rgb(187, 189, 187);
+}
+a{
+    text-decoration-style: none;
+}

@@ -1,0 +1,15 @@
+form {
+    padding: 10px;
+}
+.formulario {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;;
+}
+.obligatorio {
+    color: red;
+    font-size: 20px;
+}
+form.h1 {
+    font: bold 30px;
+}

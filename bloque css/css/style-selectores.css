@@ -21,7 +21,7 @@ a {
     padding: 0.1em;
 }
 /* Todos los elementos "em" de clase "especial" en toda la pagina */
-.especial {
+em.especial {
     background: #ffcc99;
     border: 1px solid #ff9900;
     padding: 0.1em;
@@ -29,4 +29,8 @@ a {
 /* Elementos "span" contenidos en .normal */
 .normal span {
     font-weight: bold;
+}
+.menu img {
+  width: 5px;
+  height: 5px;
 }

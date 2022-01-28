@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/selectors5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exercici 5</h1>
+    <h2>FORMULARIO DE ALTA</h2>
+    <form action="/action_page.php" method="get">
+      <div class="formulario">
+        <label for="fname">Nombre y apellidos<span class="obligatorio">*</span></label>
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Primer apellido</label>
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="lname">Segundo apellido</label>
+        <input type="text" id="lname2" name="lname2" /><br /><br />
+        <br /><br />
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="El teu e-mail"
+        /><br /><br />
+      </div>
+      <div class="formulario">
+        <label for="telefon">Telèfon:</label>
+        <input
+          type="tel"
+          id="telefon"
+          name="telefon"
+          maxlength="9"
+        /><br /><br />
+        <label for="via">Tipus de via:</label>
+        <select id="via" name="via">
+          <option value="0">Tria el tipus de via</option>
+          <option value="carrer">Carrer</option>
+          <option value="avinguda">Avinguda</option>
+          <option value="placa">Plaça</option>
+        </select>
+        <label for="adreca">Adreça:</label>
+        <input
+          type="text"
+          id="adreca"
+          name="adreca"
+          placeholder="La teva adreça"
+        />
+        <label for="numero">Número:</label>
+        <input
+          type="number"
+          id="numero"
+          name="numero"
+          placeholder="El número"
+          max="50000"
+        /><br /><br />
+        <label for="pis">Pis:</label>
+        <input type="text" id="pis" name="pis" placeholder="El pis" />
+        <label for="porta">Porta:</label>
+        <input type="text" id="pis" name="pis" placeholder="El pis" />
+        <label for="escala">Escala:</label>
+        <input
+          type="text"
+          id="escala"
+          name="escala"
+          placeholder="L'escala"
+        /><br /><br />
+        <label for="codipostal">Codi postal:</label>
+        <input
+          type="text"
+          id="codipostal"
+          name="codipostal"
+          placeholder="Codi postal"
+        />
+        <label for="poblacio">Població:</label>
+        <input
+          type="text"
+          id="poblacio"
+          name="poblacio"
+          placeholder="La teva població"
+        /><br /><br />
+      </div>
+    </form>
+  </body>
+</html>

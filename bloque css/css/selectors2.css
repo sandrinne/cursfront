@@ -1,63 +1,75 @@
 a {
-    color: red;
+  color: red;
+}
+a:hover {
+  background-color: red;
+  color: white;
+  padding: 0.6em;
 }
 li {
-list-style: none;
-}
-.especial {
-    background-color: red;
-    color: white;
-    padding: 0.6em;
+  list-style: none;
 }
 .cuadrado {
-    width: 100px;
-    height: 100px;
-    background-color: grey;
-    display: inline-block;
-    border: 2px black solid;
-    padding: 20px;
-    margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  margin: 20px;
 }
 section {
-    width: 600px;
+  width: 600px;
 }
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .tabla {
-    background-color: rgb(196, 192, 192);
-    border: black 1px;
-    border-style: solid;
-    padding: 20px;
+  background-color: rgb(196, 192, 192);
+  border: black 1px;
+  border-style: solid;
+  padding: 20px;
 }
 .flecha {
-    width:fit-content;
-    height: auto;
-    display: inline-block;
+  width: fit-content;
+  height: auto;
+  display: inline-block;
 }
 .seis {
-    width: 400px;
-    height: 150px;
-    background-color: salmon;
-    border: black 4px;
-    border-style:dotted;
-margin: 50px;
-padding: 40px;
+  width: 400px;
+  height: 150px;
+  background-color: salmon;
+  border: black 4px;
+  border-style: dotted;
+  margin: 50px;
+  padding: 40px;
 }
 .textoseis {
-    font-size: 2rem;
-    text-align: center;
-    line-height: 5rem;
-    text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem;
+  text-transform: uppercase;
 }
 form {
-    padding: 20px;
+  padding: 20px;
 }
 .formulario {
-    display: inline-block;
-    width: 300px;
-    padding: 10px;;
+  display: inline-block;
+  width: 300px;
+  padding: 10px;
+}
+.menu {
+  width: 200px;
+}
+article {
+  width: 600px;
+}
+li.elemento {
+  width: 200px;
+  border: solid 2px black;
+  background-color: grey;
 }
