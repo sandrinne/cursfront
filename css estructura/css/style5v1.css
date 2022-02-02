@@ -1,0 +1,21 @@
+li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+    
+}
+ul {
+    border: 2px black solid;
+    width: fit-content;
+    padding: 1rem;
+    background-color: black;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    background-color: white;
+    color: black;
+}

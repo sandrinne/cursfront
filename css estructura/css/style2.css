@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 620px;
+    height: 100px;
+    text-align: center;
+    background-color: yellow;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.columna1 {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(68, 172, 233);
+    padding: 10px;}
+.columna2 {
+    float: left;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(47, 158, 47);
+    padding: 10px;
+}
+.columna3 {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(240, 23, 124);
+    padding: 10px;
+}
+footer {
+    float: left;
+    width: 620px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(223, 145, 29);
+    padding: 20px;
+    clear: left;
+}
+p {
+    font-size: 10px;
+}

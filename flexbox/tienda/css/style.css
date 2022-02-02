@@ -1,0 +1,114 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .header {
+    background: black;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+        .menu {
+           background: #FBF8F1; 
+           display: flex;
+           flex-flow: row nowrap;
+           height: 100px;
+           align-items: center;
+        }
+            .logo {
+                background: #54BAB9;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .nav {
+                background: #54BAB9;
+                flex: 4 1 auto;
+                height: 30px;
+            }
+            .social {
+                background: #54BAB9;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+        .slide {
+            background: #54BAB9
+        }
+            h1 {
+                background: #E9DAC1
+            }
+    .section {
+        background: black;
+        display: flex;
+     }
+        .products {
+            background: #694E4E;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article {
+                background: #F3C5C5;
+                flex: 1 1 40%;
+            }
+            .navegation {
+                background: #C1A3A3;
+                flex: 1 1 100%;
+            }
+        .aside {
+            background: #F3C5C5;
+            flex: 1 1 auto;
+        }
+                .banner {
+                    background: #694E4E;
+                 }
+    .footer {
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+        .footer1 {
+            background: #1572A1;
+            width: 50%;
+        }
+@media screen and (max-width:800px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+    }
+    .social {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .products {
+        flex-direction: column;
+    }  
+}
+@media screen and (max-width: 400px){
+    .products {
+        flex-direction: column;
+    }  
+    .aside {
+        flex-direction: column;
+    }
+}

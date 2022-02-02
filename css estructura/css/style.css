@@ -1,0 +1,42 @@
+#columna1 {
+    width: 450px;
+    display: inline-block;
+    border: solid pink 5px;
+    margin: 10px;
+    padding: 20px;
+
+}
+#columna2 {
+    width: 250px;
+    display: inline-block;
+    border: solid pink 5px;
+    margin: 10px;
+    padding: 20px;
+
+}
+#main {
+    width: 1200px;
+    border: black solid 5px;
+    margin: 10px;
+    float: left;
+}
+#columna3 {
+    float:left;
+    width: 450px;
+    border: solid pink 5px;
+    margin: 10px;
+    padding: 20px;
+
+}
+#columna4 {
+    float:left;
+    width: 150px;
+    border: solid pink 5px;
+    margin: 10px;
+    padding: 20px;
+
+}
+.izda {
+    text-align: left;
+    text-decoration: underline;
+}

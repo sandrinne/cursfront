@@ -1,0 +1,26 @@
+.container {
+    background-color: grey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    height: 600px;
+}
+.item {
+    background-color: lightblue;
+    padding: 2rem;
+    border: lightcyan solid 1rem;
+}
+body {
+    background-color: lightcoral;
+}
+.item1 {
+    order:2;
+    align-self: flex-start;
+}
+.item2 {
+    order:5;
+}
+.item3 {
+    order:4;
+}
