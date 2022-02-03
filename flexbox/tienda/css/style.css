@@ -1,8 +1,16 @@
 * {
-    margin: 10px;
+    margin: 1px;
     padding: 10px;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Lora', serif;
+}
+a {
+    text-decoration: none;
+    color: #694E4E;
+}
+
 .container {
     max-width: 1200px;
     min-width: 320px;
@@ -11,31 +19,42 @@
 
 }
     .header {
-    background: black;
     display: flex;
     flex-flow: column nowrap;
     }
         .menu {
-           background: #FBF8F1; 
+           background-color: #E9DAC1  ; 
            display: flex;
            flex-flow: row nowrap;
-           height: 100px;
            align-items: center;
         }
             .logo {
-                background: #54BAB9;
                 flex: 1 1 auto;
-                height: 30px;
             }
+                .logo img {
+                    width: 80%;
+                }
             .nav {
-                background: #54BAB9;
                 flex: 4 1 auto;
-                height: 30px;
             }
+                .ul1 {
+                    display: flex;
+                }
+                .li1 {
+                    list-style: none;
+                }
+                .li1 a {
+                    background-color:#E9DAC1;
+                    display: block;
+                    padding: 8px;
+                }
+                .li1 a:hover {
+                    background-color:white;
+                }
             .social {
-                background: #54BAB9;
+                display: flex;
                 flex: 1 1 auto;
-                height: 30px;
+                align-content: center;
             }
         .slide {
             background: #54BAB9
@@ -67,6 +86,7 @@
         }
                 .banner {
                     background: #694E4E;
+                    width: 100%;
                  }
     .footer {
         background: black;
@@ -77,7 +97,7 @@
             background: #1572A1;
             width: 50%;
         }
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     .section {
         flex-direction: column;
     }
@@ -104,7 +124,7 @@
         flex-direction: column;
     }  
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     .products {
         flex-direction: column;
     }  
