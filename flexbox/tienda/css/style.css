@@ -10,13 +10,15 @@ a {
     text-decoration: none;
     color: #694E4E;
 }
+img {
+    width: 100%;
+}
 
 .container {
     max-width: 1200px;
     min-width: 320px;
     display: flex;
     flex-flow: column nowrap;
-
 }
     .header {
     display: flex;
@@ -44,7 +46,6 @@ a {
                     list-style: none;
                 }
                 .li1 a {
-                    background-color:#E9DAC1;
                     display: block;
                     padding: 8px;
                 }
@@ -57,25 +58,52 @@ a {
                 align-content: center;
             }
         .slide {
-            background: #54BAB9
+            margin: 0px;
+            padding: 0px;
         }
-            h1 {
-                background: #E9DAC1
-            }
+        .slide a {
+            display: block;
+            height: 400px;
+            background-image: url("../img/Imagen-fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            place-content: center;
+        }
+         .slide h1 { 
+             color: white;   
+                
+                    }
     .section {
-        background: black;
         display: flex;
+        flex-direction: row;
      }
         .products {
-            background: #694E4E;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
+            margin: 0px;
+            padding: 0px;
         }
             .article {
-                background: #F3C5C5;
                 flex: 1 1 40%;
+                display: flex;
+                flex-flow: row wrap;
             }
+                .articleimg {
+                    width: 100%;
+                    border: white solid 2px;
+                }
+                .articletxt {
+                    width: 100%;
+                    border: white solid 2px;
+                }
+                .articleboton {
+                    display: flex;
+                    flex-flow: row nowrap;
+                   justify-content: space-between;
+                }
             .navegation {
                 background: #C1A3A3;
                 flex: 1 1 100%;
