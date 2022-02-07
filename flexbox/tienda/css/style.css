@@ -1,10 +1,11 @@
 * {
-    margin: 1px;
+    margin: 0px auto;
     padding: 10px;
     box-sizing: border-box;
 }
 body {
     font-family: 'Lora', serif;
+    font-size: 12pt;
 }
 a {
     text-decoration: none;
@@ -34,7 +35,7 @@ img {
                 flex: 1 1 auto;
             }
                 .logo img {
-                    width: 80%;
+                    width: 60%;
                 }
             .nav {
                 flex: 4 1 auto;
@@ -50,7 +51,7 @@ img {
                     padding: 8px;
                 }
                 .li1 a:hover {
-                    background-color:white;
+                    text-decoration: underline;
                 }
             .social {
                 display: flex;
@@ -80,11 +81,12 @@ img {
         flex-direction: row;
      }
         .products {
-            flex: 2 1 auto;
+            flex: 3 1 auto;
             display: flex;
             flex-flow: row wrap;
             margin: 0px;
             padding: 0px;
+            width: 100%;
         }
             .article {
                 flex: 1 1 40%;
@@ -104,26 +106,38 @@ img {
                     flex-flow: row nowrap;
                    justify-content: space-between;
                 }
+                .button {
+                    background: #694E4E;
+                    font-family: lora;
+                    color: white;
+                    border-radius: 5px;
+                }
             .navegation {
-                background: #C1A3A3;
                 flex: 1 1 100%;
+                text-transform: uppercase;
+                text-align: center;
             }
         .aside {
-            background: #F3C5C5;
             flex: 1 1 auto;
+            margin: 0px;
+            padding: 0px;
         }
                 .banner {
-                    background: #694E4E;
                     width: 100%;
                  }
     .footer {
-        background: black;
         display: flex;
         justify-content: center;
+        background: #E9DAC1;
+        width: 100%;
+        margin: 0px;
+        padding: 50px;
     }
         .footer1 {
-            background: #1572A1;
-            width: 50%;
+            width: 100%;
+        }
+        .footer1 li {
+            list-style: none;
         }
 @media screen and (max-width:768px) {
     .section {
@@ -133,12 +147,14 @@ img {
         flex-direction: column;
         height: auto;
     }
+    .ul1 {
+        display: flex;
+        flex-direction: column;
+    }
     .aside {
         display: flex;
         justify-content: center;
-    }
-    .logo {
-        width: 100%;
+        flex-direction: column;
     }
     .nav {
         width: 100%;
@@ -146,17 +162,24 @@ img {
     .social {
         width: 100%;
     }
-}
-@media screen and (max-width: 600px){
     .products {
         flex-direction: column;
     }  
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 420px){
     .products {
         flex-direction: column;
-    }  
-    .aside {
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .ul1 {
+        display: flex;
         flex-direction: column;
     }
 }
