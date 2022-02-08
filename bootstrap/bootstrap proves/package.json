@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-proves",
+  "version": "1.0.0",
+  "description": "Mi primer bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandrinne",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
