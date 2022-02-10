@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://use.fontawesome.com/08fb09e756.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,18 +14,18 @@
   <body>
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <div class="container p-3">
       <!-- logo -->
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
             src="./img/logo-bookmark.svg"
             alt=""
-            width="100%"
-            height="24"
             class="d-inline-block align-text-top"
           />
         </a>
       </div>
+
       <!-- Menu horizontal -->
       <div class="container-fluid">
         <button
@@ -38,7 +39,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+        <div
+          class="collapse justify-content-end navbar-collapse"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
@@ -52,33 +56,49 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Login</a
-              >
+              <button type="button" class="btn btn-danger">Login</button>
             </li>
           </ul>
         </div>
       </div>
+    </div>
     </nav>
+  </div>
     <!-- Grid responsive -->
-    <div class="container">
-      <div class="row" style="height: 300px; align-items: center">
-        <div class="col">
+      <header>
+      <div class="container pt-5">
+        <div class="row" align-items: center>
+          <div class="colsm-12 col-md-6 col-lg-6">
             <h1>A simple Bookmark Manager</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos iusto cumque nam! Tempora voluptates accusantium eos a? Libero est consequatur et nam vero atque. Explicabo voluptate ipsa ipsum quidem!</p>
-            <button type="button" class="btn btn-primary">Get it on Chrome</button>
-            <button type="button" class="btn btn-light">Get it on Firefox</button>
-        </div>
-        <div class="col">
-            <img src="./img/mockup.jpg" alt="" width="100%">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              dignissimos iusto cumque nam! Tempora voluptates accusantium eos
+              a? Libero est consequatur et nam vero atque. Explicabo voluptate
+              ipsa ipsum quidem!
+            </p>
+            <button type="button" class="btn btn-primary">
+              Get it on Chrome
+            </button>
+            <button type="button" class="btn btn-light">
+              Get it on Firefox
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <img src="./img/mockup.jpg" alt="" width="100%" />
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- caracteristicas de productos -->
+    <main class="container">
+    <div class="products">
+      <div class="col-lg-6 m-auto text-center">Features</div>
 
+
+
+
+    </div>
+  </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       defer
