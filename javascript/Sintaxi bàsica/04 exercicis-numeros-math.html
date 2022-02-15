@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<script>
+// 1. Donat un número:
+// arrodoneix, arrodoneix cap abaix i cap adalt, arrel cuadrada, absolut, potencia,
+// minim, maxim, aleatori, aleatori dins d’un rang.
+let a=+prompt("Escribe un número con decimales");
+if (isNaN(a)) {
+  window.location.reload();
+  window.alert('no es un número, Inserta un número válido')
+} else {
+  
+  document.write("<p>El número es "+a+"</p>");
+  let redondeo= Math.ceil(a);
+  console.log("Redondeo al alza "+ redondeo);
+  let redondeo2= Math.floor(a);
+  console.log("Redondeo a la baja "+ redondeo2);
+  let raizcuadrada=Math.sqrt(a);
+  console.log("La raíz cuadrada "+ raizcuadrada);
+  let absoluto=Math.abs(a);
+  document.write("<p>El valor absoluto es " + absoluto +"</p>");
+}
+    
+</script>
+
+
+
+
+  </body>
+</html>
