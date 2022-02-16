@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<script>
+// 2. Fes un programa que demani dos números a l’usuari i retorni un valor aleatori enter comprès entre aquests dos números, ambdós inclosos
+let first_number = parseInt(prompt("Insereix el PRIMER nombre"));
+			let second_number = parseInt(prompt("Insereix el SEGON nombre"));
+			let random_number = 0  ;
+
+			// 1a manera de fer-ho
+			// Math.floor(Math.random() * (max - min)) + min; -> Generates a random number between two.			
+			let min_number= Math.min(first_number,second_number );
+			let max_number= Math.max(first_number,second_number );
+			random_number = Math.floor(Math.random() * (max_number - min_number)) + min_number;
+			console.log(" manera + eficient .... Primer = " + min_number + "\nSegon = " + max_number + "\nNumero aleatori = " + random_number);
+</script>
+
+  </body>
+</html>
