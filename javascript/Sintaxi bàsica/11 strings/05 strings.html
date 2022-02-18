@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 5. Realitzar la cerca d'un string en un string origen. Per fer-ho cal demanar per pantalla
+// una frase o text (la font) i després una paraula a cercar. En cas de trobar-la, imprimir
+// la posició, sinó un missatge que indiqui que no hi és.
+// Quina es la longitud de la Frase?
+
+let frase = prompt('Escribe una frase')
+let palabra = prompt('Escribe una palabra')
+document.write(frase + "<br><br>")
+document.write(palabra + "<br><br>")
+let dondeEsta = frase.indexOf(palabra)
+document.write(dondeEsta + "<br><br>")
+if (dondeEsta !=-1) {
+    document.write('La frase contiene la palabra '+ palabra)
+} else {
+    document.write('la frase no contiene la palabra' + palabra)
+}
+
+
+
+    </script>
+    
+</body>
+</html>

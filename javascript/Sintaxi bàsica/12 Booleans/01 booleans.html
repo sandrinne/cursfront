@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Declara una variable anomenada esCorrecte, assigna-li true o false. Utilitza un
+//condicional per veure el seu valor.
+
+let esCorrecte=true
+if (esCorrecte) {
+    console.log("verdadero")
+
+}else{
+    console.log("falso")
+}
+// 2. Declara i assigna dos valors booleans. Programa els següent escenaris:
+// En la resta de casos ha de ser Fals.
+let a=true
+let b=false
+// a. Escenari 1: Si tots dos valors són certs, el resultat hauria de ser cert. En
+// la resta de casos ha de ser Fals.
+if (a && b) {
+    console.log("verdadero")
+    
+} else {
+    console.log("falso")   
+}
+// b. Escenari 2: Si un dels dos valors és certs, el resultat hauria de ser cert.
+if (a || b) {
+    console.log("verdadero")  
+} else {
+    console.log("false")   
+}
+// 3. Analitza les següents expressions lògiques. Mostra per pantalla el seu valor i
+// raona el seu resultat.
+// a) 2 < 12
+if (2 < 12) {
+    console.log("Verdadero. 2 es menor que 12")    
+}
+var c=2<12
+console.log(c)
+// b) 2 < "12"
+console.log(Boolean("12"))
+console.log(Boolean((2 < "12")))
+if ((2 < "12")) {
+    console.log("Verdadero. Porque Javascript transforma las cadenas de texto comparadas con números")   
+}
+// c) "2" < "12"
+console.log(Boolean ("2" < "12"))
+if ((2 < "12")) {
+    console.log("Falso. Porque Javascript no transforma las cadenas de texto cuando son las dos")   
+}
+var d="2"<"12"
+console.log(d)
+// d) !("2" < "12")
+
+
+
+// e) ((2 < "12") && (2 == "2"))
+// f) (("2" < "12") || (2 < 12))
+// g) (("2" < "12") && (2 < 12))
+
+
+
+    </script>
+    
+</body>
+</html>
