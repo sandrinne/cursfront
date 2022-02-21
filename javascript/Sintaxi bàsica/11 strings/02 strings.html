@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 2. Practicarem amb els mètodes: .replace , .slice, i indexof
+      // Donada la següent declaració: const producto = 'Monitor 20 Pulgadas';
+      // a. Reemplaça Pulgadas per ‘. Reemplaça 20 per 40.
+      // b. Extreu en una nova variable la següent part de la frase: 40 Pulgadas.
+      // c. Extreu en una nova variable la següent part de la farase: nitor 20.
+      // d. Declara una variable i assignali el teu Nom. Mostra la primer lletra d’aquesta
+      // variable.
+
+let producto = 'Monitor 20 Pulgadas'
+console.log(producto)
+let producto40 = producto.replace('20','40')
+console.log(producto40)
+let productocomilla = producto.replace("Pulgadas", "\'")
+console.log(productocomilla)
+let producto40pulgadas = producto40.slice(8,22)
+console.log(producto40pulgadas)
+let productonitor20 = producto.slice(2, 10)
+console.log(productonitor20)
+let nombre = 'Sandra'
+let nombreInicial = nombre.slice(0,1)
+console.log(nombreInicial)
+
+
+
+
+    </script>
+  </body>
+</html>
