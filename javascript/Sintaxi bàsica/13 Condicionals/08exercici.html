@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   8. Imagina’t que en la teva botiga tens les següents variables:
+    // let efectivo; 
+    // let credito; 
+    // let disponible = efectivo + credito; 
+    // let totalCarrito;
+
+    // Programa un codi, que mostri als clients un missatge amb les formes de pagament que té disponibles en funció dels següents 
+    
+    // escenaris: 
+    // escenari 1: “Pots comprar en efectiu o amb crèdit”
+    let efectivo = 50; 
+    let credito = 700; 
+    let disponible = efectivo + credito; 
+    let totalCarrito = 700;
+
+    if (efectivo >= totalCarrito || credito >= totalCarrito) {
+        console.log ("Pots comprar en efectiu o amb crèdit")
+        
+    } else if (disponible >=totalCarrito){
+        console.log("Paga con ambos")    
+    }
+    else {
+        console.log ("No puedes pagar")
+    }
+
+    // escenari 2: “Pots comprar fent us d’efectiu i crèdit”
+    // let efectivo = 300; 
+    // let credito = 400; 
+    // let disponible = efectivo + credito; 
+    // let totalCarrito = 700;
+    // if (disponible >= totalCarrito) {
+    //     console.log("Pots comprar fent ús d'efectiu i crèdit")
+        
+    // } else {
+    //     console.log("No pots comprar fent ús d'efectiu i crèdit")
+    // }
+
+    // escenari 3: “No disposes de saldo disponible per fer la compra”
+    
+    //  let efectivo = 300; 
+    //  let credito = 400; 
+    //  let disponible = efectivo + credito; 
+    //  let totalCarrito = 900;
+
+    //  if (disponible<totalCarrito) {
+    //      console.log ("No disposes de saldo disponible per fer la compra")
+         
+    //  } else {
+    //      console.log("Disposes de saldo")
+         
+    //  }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
