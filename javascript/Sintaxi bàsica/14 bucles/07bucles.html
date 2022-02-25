@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 7. Codifiqueu un programa amb un bucle for que permeti comptar el numero de
+// vegades que surt una lletra en una frase
+
+let frase = 'para que quiero pies si tengo alas para voler';
+let letra = 'a'
+let numveces = 0 
+
+for (let f = 0; f < frase.length; f++) {
+    if (frase.charAt(f) == letra)  {
+        numveces = numveces+1
+    }
+}
+document.write('La letra ' + letra + ' sale ' + numveces + ' veces')
+    </script>
+</body>
+</html>
