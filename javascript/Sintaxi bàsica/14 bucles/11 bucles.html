@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//2. A) Utilitza la declaració do while de JavaScript per programar un simple joc
+// d'endevinar un número del 1 al 10. Segueix el següent passos:
+// a. El teu programa calcularà un número secret ( pots fer servir l’objecte Math )
+// i no l’ha de mostrar per pantalla, ja que l’hauràs d’endevinar.
+// b. Demana el número que has d’endevinar per pantalla entre 1 i 10 ( fent
+// servir el prompt) .
+// c. Repeteix el punt anterior, fins que no donis amb el número secret
+// d. Quan el trobis mostra un missatge per pantalla amb el número d’intents que
+// has fet.
+// b) Modificar el programa . En aquest cas, a més, s’estableix un número màxim
+// de 5 intents. Si l’usuari encerta el número escollit pel programa en aquests 5
+// intents, el programa mostra el següent missatge per pantalla: “Enhorabona, el
+// número és X i has necessitat Y intents per encertar-lo”. Si no encerta el número
+// amb els 5 intents, el programa mostra per pentalla: "Has utilitzat massa intents!
+// El número és X "
+let numsecret = Math.floor (Math.random()*10) + 1
+let numnostre
+let intents = 0
+const MAXINTENTS = 5
+console.log(numsecret)
+do {
+    intents++
+   numnostre = +prompt('Escribe un numero')
+
+
+}
+while (numnostre !== numsecret || intents <= MAXINTENTS)
+document.write ('Enhorabuena!'+ 'lo has conseguido en ' + intents + 'intentos')
+if (intents > MAXINTENTS) {
+    document.write ('Has utilitzat massa intents!. El número secret es ' + numsecret)    
+}
+
+    </script>
+</body>
+</html>
