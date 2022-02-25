@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
 //1. Imagina’t que vols fer el pagament del carrito de la compra.
 // Donades 2 variables totalCarrito, cashDisponible, comprova si tens prou cash per pagar el total del carret.
-        let totalCarrito= 50
-        let CashDisponible= 50
-        if (totalCarrito > CashDisponible) {
-            console.log ("No tienes suficiente dinero")
-            
-        } 
-        else if (totalCarrito = CashDisponible) {
-            console.log ("ojo, acabas con todo el dinero")
-            
-        }    
-            else {
-            console.log ("tienes dinero, puedes hacer la compra")   
-        }
+      let totalCarrito = 50;
+      let CashDisponible = 50;
+      if (totalCarrito > CashDisponible) {
+        console.log("No tienes suficiente dinero");
+      } else if ((totalCarrito = CashDisponible)) {
+        console.log("ojo, acabas con todo el dinero");
+      } else {
+        console.log("tienes dinero, puedes hacer la compra");
+      }
+
 //2. Imagina’t que en la teva botiga els usuaris poden tenir 3 roles:
 // • ADMIN: El Usuario puede editar, eliminar y ver toda la información
 // • EDITOR: El usuario solo puede editar sus registros
 // • AUTOR: El usuario solo puede registrar usuarios
-// • ANOMYMOUS: El Usuario es visitante, solo puede ver la información
-// Controla les accions que poden fer cadascún d’ells amb un if
+ // • ANOMYMOUS: El Usuario es visitante, solo puede ver la información
+ // Controla les accions que poden fer cadascún d’ells amb un if
 
-        let Admin=false
-        let Editor=false
-        let Autor=true
+      let rol = "Admin";
 
-        if (Admin) {
-            console.log ("El Usuario puede editar, eliminar y ver toda la información")
-            
-        } else {
-            console.log ("Tu rol no es de administrador")
-            
-        }
-        if (Editor) {
-            console.log ("El usuario solo puede editar sus registros")
+      if (rol) {
+        console.log(
+          "El Usuario puede editar, eliminar y ver toda la información"
+        );
+      } else {
+        console.log("Tu rol no es de administrador");
+      }
 
-        } else {
-            console.log ("tu rol no es de editor")
-        }
-        if (Autor) {
-            console.log ("El usuario solo puede registrar usuarios")
-        }
-        else {
-            console.log ("tu rol no es de autor")
-        }
-        // 3. Quina és la millor estructura de control per diferenciar les funcionalitats de les formes de pagament d’una compra, tenint les següents opcions: efectiu, codi promocional, tarjeta. Escriu la estructura de control més adecuada.
-        let formadepagament=true
+// 3. Quina és la millor estructura de control per diferenciar les funcionalitats de les formes de pagament d’una compra, tenint les següents opcions: efectiu, codi promocional, tarjeta. Escriu la estructura de control més adecuada.
+//   Amb switch
+let metodopago="efectivo"
+switch("Has pagado con " + metodopago) {
+    case 'efectivo':
+    console.log ("Pagaste con " + efectivo)
+
+}
+
+//4. Per un pagament s’han de donar TOTES les opcions:
+      // 1. Que tingui cash
+      // 2. Que la compra sigui més gran que 100€
+
+      let cash=true
+      let total=100
+      if (cash, total=>100) {
+          console.log("pots pagar")
+          
+      } else {
+          console.log("no pots pagar")
+          
+      }
+    //   5. Fes l’anterior exercici fent servir l’operador ternari
+
+//     6. Demana una nota (número). Mostra qualificació segons nota:
+// 0-3: Mol deficient
+// 3-5: Insufficient
+// 5-6: Sufficient
+// 6-7: Bé
+// 7-9: Notable
+
+// 7. Compara aquests dos condicionals … quina és la diferencia?
+const age = '18';
+if (age === 18) console.log('You just became an adult :D ');
+if (age == 18) console.log('You just became an adult :D ');
 
 
 
     </script>
-</body>
+  </body>
 </html>

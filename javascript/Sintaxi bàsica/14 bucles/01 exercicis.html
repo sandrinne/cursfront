@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Identifica si un número és parell o imparell amb un for...
+        let numero2=15
+        for (let i=0; i<=numero2; i++) {
+            if(i%2==0) {
+                console.log('El número ' + i + ' es par')
+            } else {
+                console.log ('El número '+ i +' es impar')
+            }
+            
+            }
+// 2. Crear un programa que lea un número entero y a partir de él cree un cuadrado de asteriscos con ese tamaño. ( fem servir el debugger ), exemple, numero=5
+
+let numero3=2
+let k,l3
+for (k=0; k<numero3; k++){
+    for (l=0; l<numero3; l++) {
+    document.write("*")
+}
+document.write("<br>")
+}
+  // 3. El mateix que l’anterior exercici, però aquesta vegada el numero de files es diferent que al de les columnes. Exemple, files=2, columnes=7
+
+let numerof=3
+let numeroc=7
+let a,b
+for (a=0; a<numerof; a++){
+    for (b=0; b<numeroc; b++) {
+    document.write("*")
+}
+document.write("<br>")
+}
+// 4. Fes un programa que demani un número i calculo la seva taula de multiplicar
+let num = window.prompt('Escribe un número')
+for (let i=0; i<=10; i++) {
+    console.log(num + 'x' + i + '=' + num*i)
+}
+
+    </script>
+</body>
+</html>

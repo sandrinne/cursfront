@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         8. Fes un programa que mostri el següent per pantalla:
+      // *
+      // * *
+      // * * *
+      // * * * *
+      // * * * * *
+      // * * * * * *
+      // El nombre de línies formades per “*” vindrà donat per una variable.
+      // Condició: En tot el codi del programa només hi pot haver un *
+    //   let columnes = 1;
+    //   let files = 6;
+
+    //   let i, j;
+    //   // Create the square with the '*' character
+    //   for (i = 0; i < files; i++) {
+    //       document.write("*".repeat(i)+"<br>");
+    //     }
+      let files = 30;
+
+      let i, j;
+      // Create the square with the '*' character
+      for (i = 0; i < files; i++) {
+          for (j = 0; j < i; j++) {
+              document.write('*')
+          }
+          document.write('<br>')
+        } 
+    </script>
+  </body>
+</html>
