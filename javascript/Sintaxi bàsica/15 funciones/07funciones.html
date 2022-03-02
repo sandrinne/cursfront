@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 7. Defineix una frase e implementar les funcions següents:
+
+      // a. Funció per Imprimir la primera meitat dels caràcters de la cadena.
+      function meitat(frase) {
+        let posiciostring = Math.floor(frase.length / 2);
+        let primeraPartString = frase.slice(0, posiciostring);
+        console.log(primeraPartString);
+      }
+      let frase = "Para que quiero pies si tengo alas para volar";
+      meitat(frase);
+
+      // b. Funció per Imprimir el darrer caràcter.
+      function darrer(frase) {
+        let posicioFinal = frase.length;
+        let darrercaracter = frase.slice(-1);
+        console.log(darrercaracter);
+      }
+      darrer(frase);
+
+      // c. Funció per Imprimir-ho en forma inversa.
+      function inversa(frase) {
+        let fraseinversa = frase.split(" ").reverse().join("");
+        console.log(fraseinversa);
+      }
+      inversa(frase);
+
+      // d. Funció per Imprimir cada caràcter del String separat amb un guió.
+      function guio(frase) {
+        let fraseguio1 = frase.split("").join("-");
+        let frasesenseespais = fraseguio1.replace(/ /g, "-");
+        console.log(frasesenseespais);
+      }
+      guio(frase);
+
+      // e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades.
+      //usaremos expresiones regulares//
+      //patro = /[aeiou]/gi
+      //match
+
+      vocales = /([a,e,i,o,u])/gi;
+      numvocales = frase.match(vocales);
+      console.log(numvocales)
+      
+    </script>
+  </body>
+</html>
