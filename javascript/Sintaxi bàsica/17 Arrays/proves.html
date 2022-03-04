@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Array numeros
+const numeros = [10,20,30,40,50,60];
+console.table(numeros);
+// La forma en la que accedes a un array es por lo que se conoce como el
+// indice en el array, los arrays normalmente en todos los lenguajes se
+// inician en 0.
+// console.log(numeros[0]);
+// console.log(numeros[1]);
+// console.log(numeros[3]);
+// console.log(numeros[20]);
+for (let i = 0; i < numeros.length; i++) {
+console.log(numeros[i]);
+}
+// Añadir un elemento al carrito...
+const producto = {
+nombre: 'Monitor 20 Pulgadas',
+precio: 500
+}
+// Añadir OTRO elemento al carrito...
+const producto2 = {
+nombre: 'Celular',
+precio: 500
+}
+const producto3 = {
+nombre: 'Teclado',
+precio: 50
+}
+
+
+// Supongamos que creamos un carrito de compra
+const carrito = [producto, producto2];
+
+console.table(carrito)
+carrito.push(producto,producto);
+carrito.unshift(producto3);
+
+
+    </script>
+</body>
+</html>
