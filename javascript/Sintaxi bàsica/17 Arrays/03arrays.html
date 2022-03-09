@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 3. Donat el següent array d’objectes
+      const carrito = [
+        { nombre: "Monitor 20 Pulgadas", precio: 500 },
+        { nombre: "Televisión 50 Pulgadas", precio: 700 },
+        { nombre: "Tablet", precio: 300 },
+        { nombre: "Audifonos", precio: 200 },
+        { nombre: "Teclado", precio: 50 },
+        { nombre: "Celular", precio: 500 },
+        { nombre: "Bocinas", precio: 300 },
+        { nombre: "Laptop", precio: 800 },
+      ];
+      //a) Mostrar tots els productes del carrito.
+      for (let i = 0; i < carrito.length; i++) {
+        const element = carrito[i];
+        console.log(
+          "articulo: " + carrito[i].nombre + " Precio: $ " + carrito[i].precio
+        );
+      }
+
+      //b) Mostrar els productes de més de 300€.
+      for (let i = 0; i < carrito.length; i++) {
+        const element = carrito[i];
+        if (carrito[i].precio > 300) {
+          console.log(
+            "articulos de más de 300€: " +
+              carrito[i].nombre +
+              " Precio: $ " +
+              carrito[i].precio
+          );
+        }
+      }
+      // con filter también se puede:
+      console.log(carrito.filter((element) => element.precio > 300));
+
+      //c) Mostrar el total a pagar del carrito. (hem de sumar tots els preus.)
+      let total = 0;
+      let resultado = carrito.reduce(
+        (total, element) => total + element.precio,
+        0
+      );
+      console.log(resultado);
+
+      // otra manera de hacer el c
+      carrito.forEach((element) => (total += element.precio));
+      console.log(total);
+
+      //d) Obtenir nous arrays, tenint en compte les següents condicions:
+      // a. Nuevo Array con Productos con precio > 400
+      let carrito1 = carrito.filter(element => element.precio > 400)
+      console.table(carrito1)
+       // b. Nuevo Carrito con Productos con el nombre ‘Celular'
+       let carrito2 = carrito.filter(element => element.nombre === "Celular")
+      console.table(carrito2)
+      // c. Nuevo Carrito con todos los excepto ‘Laptop
+      let carrito3 = carrito.filter(element => element.nombre !== "Laptop")
+      console.table(carrito3)
+
+      // e) Comprova que en el carrito no hi hagi algun preu = 0
+      let carrito4 = carrito.every(element => element.precio === 0)
+      console.table(carrito4)
+
+
+
+
+    </script>
+  </body>
+</html>

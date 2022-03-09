@@ -17,6 +17,78 @@
 // ● Almenys ha de contenir un caràcter especial.
 // Pots fer servir una funció per cada comprovació. I un condicional per complir totes les condicions de les funcions.
 
+function longitudPw(pw) {
+    if (pw.length >= 8) {
+        return true
+    } else {
+        console.log("El password te " + pw.length + " caràcters. Ha de contenir almenys 8 caràcters")
+    }
+}
+
+function majusculaPw(pw) {
+    let majuscula = /[A-Z]/g
+    if ( majuscula.test(pw)) {
+        return true
+    } else {
+        console.log("El password ha de contenir almenys una majúscula")    
+    }  
+}
+
+function minusculaPw(pw) {
+    let minuscula = /[a-z]/g
+    if (minuscula.test(pw)) {
+        return true
+        
+    } else {
+        console.log ("El password ha de contenir almenys una minúscula")
+        
+    }
+}
+
+function numeroPw(pw) {
+    let numeros = /[0-9]/g
+    if (numeros.test(pw)) {
+        return true
+        
+    } else {
+        console.log ("El password ha de contenir almenys un numero")
+        
+    }
+}
+
+function especialPw(pw) {
+    let especiales = /[#¿?!¡@&%$^*¨_-]/g
+    if (especiales.test(pw)) {
+        return true
+        
+    } else {
+        console.log ("El password ha de contenir almenys un caràcter especial")
+        
+    }
+}
+
+
+
+// Escenari 1
+let pw = "BBb1234"
+longitudPw(pw)
+majusculaPw(pw)
+minusculaPw(pw)
+numeroPw(pw)
+especialPw(pw)
+
+
+if (longitudPw(pw) ==true & majusculaPw(pw) & minusculaPw(pw) & numeroPw(pw) & especialPw(pw) ) {
+    alert ("El password és correcte")
+    
+} else {
+    alert ("El password no és correcte")
+}
+
+
+
+
+
 
 
     </script>

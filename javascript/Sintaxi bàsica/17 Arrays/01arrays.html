@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-// 1. Funció que rebi dos nombres i retorni un array amb tots els nombres compresos entre ells. El programa principal ha de mostrar aquest array per
-// consola.
+      // 1. Funció que rebi dos nombres i retorni un array amb tots els nombres compresos entre ells. El programa principal ha de mostrar aquest array per
+      // consola.
 
-const numero = [ 1,20]
+      // const numero = [ 1,20]
 
-function tots(min, max) {
-    let resultat = [
-    if (min == max) {
-        return [min]
-    }
-if (min < max) {
-    for (let i = min; i< max; i++){
-        res.push(1)
-    }
+      // function tots(min, max) {
+      //     let resultat = [
+      //     if (min == max) {
+      //         return [min]
+      //     }
+      // if (min < max) {
+      //     for (let i = min; i< max; i++){
+      //         res.push(1)
+      //     }
 
-}else {
-    for (let i = max; i< min; i++) {
-        res.push(i)
-    }
-    ]
-    
+      // }else {
+      //     for (let i = max; i< min; i++) {
+      //         res.push(i)
+      //     }
+      //     ]
+      function numeros(a, b) {
+        let newArray = [];
+        let inicio = a;
+        let fin = b;
+        if (a > b) {
+          inicio = b;
+          fin = a;
+        }
+        for (let i = inicio + 1; i < fin; i++) {
+          newArray.push(i);
+        }
+        return newArray;
+      }
+      a = 15;
+      b = 8;
+      let retorn = numeros(a, b);
+      console.log(retorn);
 
+      a = 15;
+      b = 28;
+      let retorn2 = numeros(a, b);
+      console.log(retorn2);
     </script>
-    
-</body>
+  </body>
 </html>
