@@ -6,3 +6,13 @@ function buy(id) {
 
     console.log(cart)
 }
+function cleanCart() {
+    cart.length = 0
+}
+
+function sumar() {
+for (let index = 0; index < subtotal.length; index++) {
+    const element = subtotal[index];    
+}
+    
+}
