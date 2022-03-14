@@ -30,27 +30,31 @@ function cleanCart() {
 
 // subtotal()
 
-function sumarSubtotal() {
-  for (let i = 0; i < cartList.length; i++) {
-    if (cartList[i].type == "grocery") {
-      subtotal.grocery.value += cartList[i].price;
-    }
-    if (cartList[i].type == "beauty") {
-      subtotal.beauty.value += cartList[i].price;
-    }
-    if (cartList[i].type == "clothes") {
-      subtotal.clothes.value += cartList[i].price;
-    }
-  }
-}
+// function sumarSubtotal() {
+//   for (let i = 0; i < cartList.length; i++) {
+//     if (cartList[i].type == "grocery") {
+//       subtotal.grocery.value += cartList[i].price;
+//     }
+//     if (cartList[i].type == "beauty") {
+//       subtotal.beauty.value += cartList[i].price;
+//     }
+//     if (cartList[i].type == "clothes") {
+//       subtotal.clothes.value += cartList[i].price;
+//     }
+//   }
+// }
 
 //subtotal de forma dinámica
 function sumarSubtotaldinamica() {
   for (const key in subtotal) {
     for (let i = 0; i < cartList.length; i++) {
       if (cartList[i].type == key) {
-        subtotal[key].value += cartList[i].price;
+        let totalcategorias = subtotal[key].value += cartList[i].price
       }
     }
   }
 }
+
+
+//calcular total de forma dinamica
+// function calculateTotal() 
