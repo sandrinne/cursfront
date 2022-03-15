@@ -25,3 +25,20 @@ return result3
 
 //Ex. 3 funció pelisAverage(), la qual rep un array de pel·lícules i retorna la nota mitjana, amb dos decimals.
 // Ajuda: com vols obtenir un únic valor, el mètode .reduce() pot ser d'utilitat.
+function pelisAverage(director) {
+
+  // Filtrem totes les pelis del Director seleccionat
+const filmsByDirector = movies.filter (film => film.director === director)
+console.log("Director: " + director)
+console.log(filmsByDirector)
+
+//sumem els scores
+const scores = filmsByDirector.reduce((contador, film) => {
+  console.log("film: " + film.title + "Score: " + film.score + " Contador: " + contador)
+  return contador + film.score
+},0)
+
+//dividir els scores entre el numero de pelis per treure la mitjana
+const avg = scores / filmsByDirector.length
+return avg
+}
