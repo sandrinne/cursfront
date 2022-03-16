@@ -1,0 +1,15 @@
+// Exercici 2: Accedim a les classes
+// Mostra per consola
+// • el header ( class = header )
+// • el contenido-hero ( class = contenido-hero )
+// • els contenidors ( class = contenedor)
+console.log("++++++++++++++++++exercici 2")
+console.log("• ------------------Accedim a les classes")
+let el2 = document.getElementsByClassName("header")
+console.log(el2)
+console.log("• ------------------el contenido-hero ( class = contenido-hero )")
+el2 = document.getElementsByClassName("contenido-hero")
+console.log(el2)
+console.log("• ------------------el contenido-hero ( class = contenedor )")
+el2 = document.getElementsByClassName("contenedor")
+console.log(el2)

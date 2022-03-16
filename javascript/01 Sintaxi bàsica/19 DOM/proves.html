@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section id="section" class="section">
+      <p id="mainHeading" class="heading">
+        This is the main heading(not a header)
+      </p>
+      <p id="Heading" class="heading">This is a heading</p>
+      <p id="subHeading" class="heading">This is a subheading</p>
+      <ul>
+        <li id="primero">Elemento 1</li>
+        <li id="segundo">Elemento 2</li>
+        <li id="tercero">Elemento 3</li>
+      </ul>
+    </section>
+    <script>
+      //Get the first <p> element:
+      const el1 = document.querySelector("p");
+      console.log("el1");
+      console.log(el1);
+      //Get the first element with class="heading":
+      var el2 = document.querySelector(".heading");
+      console.log("el2(1)");
+      console.log(el2);
+      //Get the third element <p>:
+      const el3 = document.querySelectorAll("p")[2];
+      console.log("el3");
+      console.log(el3);
+    </script>
+  </body>
+</html>
