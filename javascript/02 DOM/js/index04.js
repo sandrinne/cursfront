@@ -17,7 +17,7 @@ el4 = document.querySelectorAll(".hospedaje .card")[1]
 console.log(el4)
 // • El formulari per id
 console.log ("-------------- El formulari per id")
-el4 = document.querySelector(".formulario")
+el4 = document.querySelector("#formulario")
 console.log(el4)
 // • El primer menú de navegació <nav>
 console.log ("-------------- El primer menú de navegació <nav>")

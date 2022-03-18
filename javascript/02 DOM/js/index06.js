@@ -11,3 +11,5 @@ console.log ("-------------- Mostrem el següent text H1")
 let nuevoH1 = document.createElement('H1')
 nuevoH1.textContent = "Encuentra alojamiento para tus próximas vacaciones"
 console.log(nuevoH1)
+
+document.querySelector(".contenido-hero h1").textContent = "Encuentra un alojamiento"

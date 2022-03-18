@@ -55,7 +55,29 @@ var products = [
     }
 ]
 
-var cart=[];
+var cart=[
+    {
+        id: 1,
+        name: 'Lawn Dress',
+        price: 15,
+        type: 'clothes',
+        quantity: 4
+    },
+    {
+        id: 2,
+        name: 'Lawn-Chiffon Combo',
+        price: 19.99,
+        type: 'clothes',
+        quantity: 1
+    },
+    {
+        id: 3,
+        name: 'Toddler Frock',
+        price: 9.99,
+        type: 'clothes',
+        quantity: 3
+    }
+];
 
 // Array de la llista de la compra
 var cartList = [];

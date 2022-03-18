@@ -49,12 +49,67 @@ function sumarSubtotaldinamica() {
   for (const key in subtotal) {
     for (let i = 0; i < cartList.length; i++) {
       if (cartList[i].type == key) {
-        let totalcategorias = subtotal[key].value += cartList[i].price
+        subtotal[key].value += cartList[i].price;
       }
     }
   }
 }
 
-
 //calcular total de forma dinamica
-// function calculateTotal() 
+function calculateTotal() {
+  let sum = 0;
+  for (const key in subtotal) {
+    sum += subtotal[key].value;
+  }
+  return sum;
+}
+
+//removeFromCart()
+// Encara no hem proporcionat una funcionalitat molt important a l'usuari: restar productes del
+// carret. Has de completar la funció removeFromCart(), la qual rep l'id del producte per al qual
+// es deu decrementar la seva quantitat en una unitat.
+// Tingues en compte que si la quantitat del producte a decrementar és 1, has d'eliminar-lo del
+// carret, no passar la seva quantitat a 0.
+
+// Ajuda: Ajuda: Garanteix que el teu codi no dóna error, si un producte que l'usuari vol
+// decrementar la seva quantitat no està en el carret.
+// function removeFromCart(id) {
+//   for (let i = 0; i< cart.length; i++) {
+//     id === cart[i].id ? cart.splice(i, 1) : false
+//   }
+//   return(cart)
+
+// }
+
+function removeFromCart(id) {
+  for (let i = 0; i < cart.length; i++) {
+    if (id === cart[i].id) {
+      if (cart[i].quantity > 1) {
+        cart[i].quantity--;
+      } else {
+        cart.splice(i, 1);
+      }
+      return cart;
+    }
+  }
+  return cart;
+}
+//getAllProducts()
+// Fes una funció que mostri per pantalla ( o de moment per consola ) tots els productes.
+function getAllProducts() {
+  products.forEach((product) => {
+    console.table(product);
+  });
+}
+// getProductsFromCategory()
+// Una altra funcionalitat necessària és mostrar productes segons una categoria
+function getProductsFromCategory(type) {
+  let aux = []
+products.forEach(product => {
+  if (product.type === type) {
+    aux.push(product)    
+  } 
+});
+return aux
+}
+  

@@ -46,11 +46,22 @@
 
       console.log(" ---------------------Exercici 3. calculateTotal() Calcular el total de l'import del carret. Podràs fer-ho sumant els subtotals de cada categoria de producte calculats en l'exercici anterior. Ha de ser escalable. Imaginat que l'e-commerce creixés i tinguéssim 100 categories!")
 
-// console.log("Calcular el total");
-// calculateTotal()
-// console.table(subtotal)
+console.log("----------------Calcular el total");
 
+console.log(calculateTotal())
 
+console.log("-----------------Borrar los productos")
+console.table(cart)
+removeFromCart(2)
+removeFromCart(3)
+removeFromCart(1)
+console.table(cart)
+
+console.log("-----------------Mostrar todos los productos")
+getAllProducts()
+console.log("-----------------Ordenar todos los productos por categoría")
+let filtrocategorias = getProductsFromCategory("clothes")
+console.table( filtrocategorias)
     </script>
   </body>
 </html>
