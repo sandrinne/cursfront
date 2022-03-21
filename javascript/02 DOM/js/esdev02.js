@@ -6,7 +6,6 @@ nuevanav.addEventListener("mouseenter", canviarcolor);
 nuevanav.addEventListener("mouseout", transparent);
 
 
-
 function canviarcolor() {
   nuevanav.style.backgroundColor = "white";
 }
