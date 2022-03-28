@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //consumim promeses
+
+    //   const calcula = new Promise(function (resolve, reject) {
+    //     setTimeout(function () {
+    //       const sum = 4 + 5;
+    //       if (isNaN(sum)) {
+    //         reject("Error while calculating sum.");
+    //       } else {
+    //         resolve(sum);
+    //       }
+    //     }, 2000);
+    //   });
+
+      //cridem la promesa
+
+    //   calcula
+    //     .then(function (result) {
+    //       console.log(result);
+    //     })
+    //     .catch(function (error) {
+    //       console.log(error);
+    //     });
+
+      //Async / Await i Try Catch
+      async function calcula() {
+        let sum = 0;
+        setTimeout(function () {
+          sum = 4 + 5;
+          if (isNaN(sum)) {
+            console.log("Error while calculating sum.");
+          } else {
+            console.log(sum);
+          }
+        }, 2000);
+      }
+      async function inici() {
+        try {
+          await calcula();
+          await calcula();
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+      inici();
+      console.log("ACABAT EL PROGRAMA PRINCIPAL");
+      console.log(2 + 2);
+
+      //Try Catch
+    </script>
+  </body>
+</html>
