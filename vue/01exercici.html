@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <title>Primer component VUE</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <template id="ejemplo">
+      <div>
+        <div>
+          <b>{{ mensaje }}</b>
+        </div>
+        <div>
+          <p v-html="mensajeHTML"></p>
+        </div>
+        <div>
+          <a v-bind:href="url">
+            <img v-bind:src="imagen" />
+          </a>
+        </div>
+        <div>
+          <p>{{ ok? "Yes" : "No" }}</p>
+        </div>
+        <div>
+          <p>{{ number + 10}}</p>
+        </div>
+        <div>
+        <button v-on:click="number++">Añadir más</button></div>
+        <button v-on:click="number--">Añadir menos</button>
+        <button v-on:click="reset(number)">Reset</button></div>
+    </div>
+      </div>
+    </template>
+
+    <div style="text-align: center" id="home">
+      <!-- Rendering data to DOM -->
+      <h1 style="color: seagreen">{{title}}</h1>
+      <h2>Title : {{name}}</h2>
+      <h2>Topic : {{topic}}</h2>
+      <!-- Calling function in methods -->
+      <h2>{{show()}}</h2>
+      <h2>{{showName('Pepe')}}</h2>
+    </div>
+
+    <!--OJO això ha d'estar aquí al final -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
