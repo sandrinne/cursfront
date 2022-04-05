@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>{{mensaje}}</div>
+      <ul>
+        <li v-for="(item, index) in paises" :value="index">
+          <!-- //Renderitza en un <ul> el contingut del array goals. -->
+          {{ item }}
+        </li>
+      </ul>
+      <div>
+        <p>Escribe un país <input type="text" v-model="pais"/></p>
+        <ul>
+            <li v-for="(item, index) in paisesfiltrados" :value="index">
+              {{ item }}
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <script>
+      //     //creamos instancia de Vue
+      const app = new Vue({
+        el: "#app",
+        data: {
+          mensaje: "Listado países",
+          paises: ["Alemania", "USA", "UK", "Canadá", "Spain"],
+          pais: "",
+        },
+
+        //propiedad computada
+        computed: {
+            paisesfiltrados: function () {
+                if (this.pais === "") {
+                    return this.paises
+                } else {
+                    return this.paises.filter(element => element.toUpperCase().includes(this.pais.toUpperCase()))
+                }
+            }
+        },
+        //   methods: {
+        //     addGoal: function () {
+        // this.goal.push(this.enteredValue),
+        // this.enteredValue = ""
+        // console.log(this.goal);
+        //     }
+        // }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>VueJs Instance</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  </head>
+  <body>
+    <style>
+      #databinding {
+        padding: 20px 15px 15px 15px;
+        margin: 0 0 25px 0;
+        width: auto;
+        background-color: #e7e7e7;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      span,
+      option,
+      input {
+        font-size: 25px;
+      }
+    </style>
+
+    <div id="databinding">
+      <h1>Benvinguda:</h1>
+      <h2>Currency Converter</h2>
+      <span>Enter Amount:</span>
+      <input type="number" placeholder="Enter Amount" /><br /><br />
+      <span>Convert From:</span>
+      <select style="width: 300px; font-size: 25px">
+        <option v-for="(item, index) in currencyfrom" :value="item.name" v-model="convertFrom">
+             {{item.desc}}
+        </option>
+      </select>
+      <span>Convert To:</span>
+      <select style="width: 300px; font-size: 25px">
+         <option v-for="(item, index) in currencyfrom" :value="item.name" v-model="convertTo">
+            {{item.desc}}
+       </option></select
+      ><br /><br />
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#databinding",
+        data: {
+          message: "Currency Exchange",
+          currencyfrom: [
+            { name: "USD", desc: "US Dollar" },
+            { name: "EUR", desc: "Euro" },
+            { name: "INR", desc: "Indian Rupee" },
+            { name: "BHD", desc: "Bahraini Dinar" },
+          ],
+          convertFrom: "",
+          convertTo: "",
+        },
+
+        //propiedad computada
+         //  computed: {
+         //      ConvertFrom: function () {
+         //          if (this.item === "") {
+         //              return this.currencyfrom
+         //          } else {
+         //              return this.item.filter(element => element.toUpperCase().includes(this.currencyfrom.toUpperCase()))
+         //          }
+         //      }
+         //  },
+      });
+    </script>
+  </body>
+</html>

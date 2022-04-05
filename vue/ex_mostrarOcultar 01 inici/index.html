@@ -12,10 +12,15 @@
     <template id="ejemplo">
       <div>
         <button @click="toggleMostrar">Mostrar/Ocultar</button>
-        <p v-if="mostrar">
+        <br>
+        <div v-if="mostrar">
           <b>{{ mensaje }}</b>
-          <img :src="imagen" />
-        </p>
+          <img :src="imagen"/>
+          <p v-for="(item, index) in cursos" :key="index">
+            <a v-bind:href="item.url">
+            {{ item.name }}</a>
+            </p>
+          </div>
         <p
           v-else
           style="
@@ -25,6 +30,10 @@
         >
           Ahora está ocultado
         </p>
+        <!-- //1. Mostra tots el noms dels cursos en una llista. 
+          2. Afegeix els links a cadascun del cursos. 
+        3. Al donar click al botó: Mostra/oculta tot el contingut.-->
+       
       </div>
     </template>
 

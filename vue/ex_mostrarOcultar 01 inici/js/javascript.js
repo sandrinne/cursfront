@@ -2,7 +2,8 @@ const app = new Vue({
   el: "#app",
   template: "#ejemplo",
   data: {
-    cursos: [
+    cursos:
+    [
       {
         name: "Historia y ventajas de trabajar con VUE",
         url: "https://youtu.be/AqesL138vMA",

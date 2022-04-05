@@ -13,6 +13,12 @@
         <label for="goal">Goal</label>
         <input type="text" id="goal" v-model="enteredValue" />
         <button v-on:click="addGoal">Add Goal</button>
+        <ul>
+        <li v-for="(item, index) in goal" :key="index">
+          <!-- //Renderitza en un <ul> el contingut del array goals. -->
+          {{ item }}
+      </li>
+      </ul>
       </div>
 
     </div>
