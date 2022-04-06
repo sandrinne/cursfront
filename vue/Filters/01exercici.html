@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <title>Exercici 01</title>
+</head>
+<body>
+Exercici 1
+<br>
+Donat un input text de tipus número.
+<br>
+Renderitza el seu valor per pantalla.
+<br>
+1. Afegeix un filtre per donar al enter introduït en el input text, format de Euros
+<br>
+2. Afegeix un segon filtre per treure decimals, en cas de que hi hagi.
+<br><br>
+<div id="app" >
+   Renderizado valor: <input type="number" v-model="numero">
+   <br><br>
+   Filtro para Euros: {{ numero | euros }}
+   <br><br>
+   Filtro para quitar decimales: {{ numero | quitardecimal }}
+
+</div>
+
+
+
+    <script>
+            var vm = new Vue({
+            el: '#app',
+            data: {
+                numero: 0,
+                resultado: ''
+            },
+            filters: {
+                euros: function (value) {
+                    return value + " €"
+                },
+                quitardecimal: function (value) {
+                    return value = Math.round(value)
+                }
+            },
+        })
+    </script>
+</body>
+</html>

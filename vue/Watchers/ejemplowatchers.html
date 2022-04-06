@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="conversor">
+        <h1>Conversor de unidades métricas </h1>
+        Kilómetros: <input type="text" v-model="kilometros">
+        Metros: <input type="text" v-model="metros">
+    </div>
+    <script>
+        let app = new Vue({
+            el: "#conversor",
+            data: {
+                kilometros: 0,
+                metros: 0,
+            },
+            watch: {
+                kilometros: function (val) {
+                    this.kilometros = val,
+                    this.metros = val * 1000   
+                },
+                metros: function (val) {
+                    this.metros = val,
+                    this.kilometros = val / 1000  
+                },
+            }
+        })
+
+
+
+
+    </script>
+</body>
+</html>
