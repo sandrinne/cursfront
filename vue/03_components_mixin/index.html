@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example components</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="app" >
+        <div class="marketplace">           
+            <course-css v-if="course.type==='course-css'" 
+                v-for="course in courses"  
+                :key="course.id"
+                :title="course.title" 
+                :subtitle="course.subtitle" 
+                :description="course.description"
+                @add="addToCart"            
+                :price="course.price"            
+            ></course-css>   
+            
+            <course-JS v-if="course.type==='course-js'"
+            v-for="course in courses"  
+            :key="course.id"
+            :title="course.title" 
+            :subtitle="course.subtitle" 
+            :description="course.description"
+            @add="addToCart" 
+            :price="course.price"            
+        ></course-JS> 
+        
+        <course-VUE v-if="course.type==='course-vue'"
+            v-for="course in courses"  
+            :key="course.id"
+            :title="course.title" 
+            :subtitle="course.subtitle" 
+            :description="course.description"
+            @add="addToCart" 
+            :price="course.price"            
+        ></course-VUE> 
+
+        </div>
+
+        <ul class="cart">
+            <li v-for="course in cart">{{ course.title }} – {{ course.months }} meses</li>
+        </ul>
+    </div>
+
+    <script src="./componentes/course.js"></script>
+    <script src="./componentes/courseCSS.js"></script>
+    <script src="./componentes/courseJS.js"></script>
+    <script src="./componentes/courseVUE.js"></script>
+    <script src="./componentes/app.js"></script>
+
+</body>
+
+</html>
