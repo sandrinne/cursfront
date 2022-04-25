@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import WebView from '../views/WebView.vue'
 import NewView from '../views/NewView.vue'
+import JokesView from '../views/JokesView.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/new',
     name: 'new',
     component: NewView
+  },
+  {
+    path: '/jokes',
+    name: 'jokes',
+    component: JokesView
   },
 ]
 
