@@ -18,8 +18,8 @@ class ProductoDataService {
   deleteAll() {
     return http.delete(`/productos`);
   }
-  findByTitle(title) {
-    return http.get(`/productos?title=${title}`);
+  findByTitle(titulo) {
+    return http.get(`/productos?titulo=${titulo}`);
   }
 }
 export default new ProductoDataService();

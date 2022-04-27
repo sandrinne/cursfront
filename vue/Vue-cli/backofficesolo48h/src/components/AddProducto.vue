@@ -2,44 +2,44 @@
   <div class="submit-form">
     <div v-if="!submitted">
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="titulo">Nombre</label>
         <input
           type="text"
           class="form-control"
-          id="title"
+          id="titulo"
           required
-          v-model="producto.title"
-          name="title"
+          v-model="producto.titulo"
+          name="titulo"
         />
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="descripcion">Descripcion</label>
         <input
           class="form-control"
-          id="description"
+          id="descripcion"
           required
-          v-model="producto.description"
-          name="description"
+          v-model="producto.descripcion"
+          name="descripcion"
         />
       </div>
-      <button @click="saveproducto" class="btn btn-success">Submit</button>
+      <button @click="saveproducto" class="btn btn-success">Enviar</button>
     </div>
     <div v-else>
-      <h4>You submitted successfully!</h4>
+      <h4>¡Los has subido correctamente!</h4>
       <button class="btn btn-success" @click="newproducto">Add</button>
     </div>
   </div>
 </template>
 <script>
-import productoDataService from "../services/productoDataService";
+import productoDataService from "../services/ProductoDataService";
 export default {
   name: "add-producto",
   data() {
     return {
       producto: {
         id: null,
-        title: "",
-        description: "",
+        titulo: "",
+        descripcion: "",
         published: false
       },
       submitted: false
@@ -48,8 +48,8 @@ export default {
   methods: {
     saveproducto() {
       var data = {
-        title: this.producto.title,
-        description: this.producto.description
+        titulo: this.producto.titulo,
+        descripcion: this.producto.descripcion
       };
       productoDataService.create(data)
         .then(response => {

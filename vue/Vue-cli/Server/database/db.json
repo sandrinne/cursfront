@@ -109,6 +109,21 @@
       "categoria": "Hogar",
       "popularidad": 0,
       "tendencia": true
+    },
+    {
+      "titulo": "Producto prueba",
+      "description": "hola",
+      "id": 12
+    },
+    {
+      "titulo": "producto 2",
+      "description": "test",
+      "id": 13
+    },
+    {
+      "titulo": "Pintalabios",
+      "descripcion": "Lorem ipsum bla bla aquí va la descripción",
+      "id": 14
     }
   ]
 }
