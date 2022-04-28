@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <router-link to="/" class="navbar-brand">Solo48h</router-link>
+      <router-link to="/" class="navbar-brand">
+      <div >
+        <img src="../public/img/Logo.svg" alt="" width="60%">
+      </div>
+      </router-link>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/productos" class="nav-link">Productos</router-link>

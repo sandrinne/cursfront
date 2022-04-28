@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "Ratón Gaming Profesional-Sensor óptico, 4 niveles de hasta 3200 DPI, iluminación LED, 7 botones, negro",
-      "url": "./img/product/product1.jpg",
+      "url": " http://localhost:3000/assets/img/product1.jpg",
       "descripcion": "Sensor óptico de gran precisión - 4 niveles de DPI (800 - 3200) - Iluminación LED de varios colores - 7 botones - Compatibilidad Windows 7/8.1/10 Dimensiones: 125 x 68 x 38 mm",
       "precio": 5.5,
       "categoria": "Electrónica",
